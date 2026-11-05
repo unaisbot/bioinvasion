@@ -1,0 +1,528 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
+        body { font-family: 'Inter', sans-serif; }
+        .line-clamp-2 {
+            display: -webkit-box;
+            -webkit-line-clamp: 2;
+            -webkit-box-orient: vertical;  
+            overflow: hidden;
+        }
+    </style>
+</head>
+<body class="bg-white">
+
+    <section class="relative h-[600px] flex items-center overflow-hidden">
+        <div class="absolute inset-0">
+            <img 
+                src="https://images.unsplash.com/photo-1542273917363-3b1817f69a2d?auto=format&fit=crop&q=80&w=1920" 
+                alt="Pristine Forest Ecosystem" 
+                class="w-full h-full object-cover brightness-50"
+            />
+        </div>
+        <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full">
+            <div class="max-w-2xl text-white">
+                <h1 id="site-name" class="text-5xl md:text-6xl font-bold mb-6 leading-tight">
+                    Bioinvasion.in
+                </h1>
+                <p id="tagline" class="text-xl md:text-2xl mb-8 text-slate-200">
+                    Unlocking knowledge about invasive species-Science, Impacts, Solutions.
+                </p>
+                <div class="flex flex-col sm:flex-row gap-4">
+                    <a href="https://www.bioinvasion.in/bioinvasion" class="bg-emerald-600 hover:bg-emerald-500 text-white px-8 py-3 rounded-lg font-semibold flex items-center justify-center gap-2 transition-all">
+                        Learn More <i data-lucide="arrow-right" class="w-5 h-5"></i>
+                    </a>
+                    <a href="https://www.bioinvasion.in/blog" class="bg-white/10 hover:bg-white/20 backdrop-blur-md text-white border border-white/30 px-8 py-3 rounded-lg font-semibold flex items-center justify-center gap-2 transition-all">
+                        Latest Insights <i data-lucide="sparkles" class="w-5 h-5"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="py-20 bg-slate-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center mb-16">
+            <h2 class="text-4xl font-bold text-slate-900 mb-6">What is Biological Invasion?</h2>
+            <p class="text-xl text-slate-600 max-w-3xl mx-auto">
+                A biological invasion occurs when species are introduced to new environments, establish themselves, and spread uncontrollably, causing significant harm to biodiversity.
+            </p>
+        </div>
+
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+
+        <!-- Card 1 -->
+        <div class="bg-slate-250 p-8 rounded-2xl shadow-sm border border-slate-200">
+            <div class="text-center">
+                <div class="w-16 h-16 bg-emerald-100 rounded-full flex items-center justify-center mx-auto mb-6">
+                    <i data-lucide="shield-alert" class="w-8 h-8 text-emerald-600"></i>
+                </div>
+                <h3 class="text-xl font-bold mb-4">Pathways</h3>
+            </div>
+            <p class="text-slate-600 text-left">
+                Biological invasions often begin through human-mediated pathways such as global trade, transport, agriculture, and ornamental horticulture. Species may be introduced intentionally or accidentally and later escape into natural ecosystems, where they establish and spread.
+            </p>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="bg-slate-250 p-8 rounded-2xl shadow-sm border border-slate-200">
+            <div class="text-center">
+                <div class="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-6">
+                    <i data-lucide="globe" class="w-8 h-8 text-blue-600"></i>
+                </div>
+                <h3 class="text-xl font-bold mb-4">Consequences</h3>
+            </div>
+            <p class="text-slate-600 text-left">
+                Once established, invasive species can outcompete native flora and fauna, alter ecosystem processes, and reduce biodiversity. Their impacts extend beyond ecology, affecting livelihoods, food security, water resources, and local economies.
+            </p>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="bg-slate-250 p-8 rounded-2xl shadow-sm border border-slate-200">
+            <div class="text-center">
+                <div class="w-16 h-16 bg-purple-100 rounded-full flex items-center justify-center mx-auto mb-6">
+                    <i data-lucide="microscope" class="w-8 h-8 text-purple-600"></i>
+                </div>
+                <h3 class="text-xl font-bold mb-4">Management</h3>
+            </div>
+            <p class="text-slate-600 text-left">
+                Effective management of biological invasion relies on prevention, early detection, and rapid response. Combining scientific research, policy support, and community participation is essential to control invasive species and safeguard ecosystem resilience.
+            </p>
+        </div>
+
+    </div>
+</div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="bg-emerald-50 rounded-3xl overflow-hidden border border-emerald-100 flex flex-col lg:flex-row items-center">
+                <div class="w-full lg:w-1/2 h-[400px]">
+                    <img 
+                        src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjVDyoyPA5XYMFE_iYtodzrMuhywXFGAcEtNYB-3YHqEIzRefuLpCxC5DAcHLHJdRq4xNXwD5Ymc5Xi8xksoy4oulAkj6gREMFLjtXyFuZTlwWpynG58vKl99pHJL7Vllh9Rxh7dCn9qoz-avrxor_8H88X_o3dtl4EL979KsL0bBW7OXdsBvaOApEidHu3/s1920/ignartonosbg-wedelia-trilobata-7150307_1920.jpg" 
+                        alt="Wedelia trilobata" 
+                        class="w-full h-full object-cover"
+                    />
+                </div>
+                <div class="w-full lg:w-1/2 p-10 lg:p-16">
+                    <div class="inline-block bg-emerald-200 text-emerald-800 text-xs font-bold px-3 py-1 rounded-full uppercase tracking-wider mb-4">
+                        Species of the week
+                    </div>
+                    <h2 class="text-3xl font-bold text-slate-900 mb-4 italic">Wedelia trilobata</h2>
+                    <p class="text-lg text-slate-700 leading-relaxed">
+                        <span class="font-semibold text-slate-900">Wedelia trilobata</span>, commonly known as <span class="font-semibold text-slate-900">Singapore daisy</span>, is a fast-spreading invasive groundcover native to Central America. It forms dense mats that suppress native plants, alters soil conditions, and rapidly invades gardens, wetlands, and forest edges, posing a serious threat to local biodiversity.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="blog" class="py-20 bg-slate-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-end mb-12">
+                <div>
+                    <h2 class="text-3xl font-bold text-slate-900 mb-2">Latest Insights</h2>
+                    <p class="text-slate-600">Explore our latest research on invasive species management.</p>
+                </div>
+            </div>
+
+           <style>
+/* Container */
+.blog-grid {
+  max-width: 1200px;
+  margin: auto;
+  padding: 20px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 24px;
+  font-family: Arial, sans-serif;
+}
+
+/* Card */
+.blog-card {
+  background: #ffffff;
+  border-radius: 18px;
+  overflow: hidden;
+  box-shadow: 0 8px 25px rgba(0,0,0,0.08);
+  transition: transform 0.3s ease;
+}
+
+.blog-card:hover {
+  transform: translateY(-6px);
+}
+
+/* Image */
+.blog-image {
+  position: relative;
+}
+
+.blog-image img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+}
+
+/* Category badge */
+.badge {
+  position: absolute;
+  top: 14px;
+  left: 14px;
+  background: #0ea66b;
+  color: #fff;
+  font-size: 12px;
+  font-weight: 600;
+  padding: 5px 10px;
+  border-radius: 6px;
+}
+
+/* Content */
+.blog-content {
+  padding: 18px 20px 20px;
+}
+
+.date {
+  font-size: 13px;
+  color: #8a94a6;
+  margin-bottom: 6px;
+}
+
+.blog-content h3 {
+  font-size: 20px;
+  line-height: 1.4;
+  margin: 6px 0 10px;
+  color: #0f172a;
+}
+
+.blog-content p {
+  font-size: 15px;
+  color: #475569;
+  line-height: 1.6;
+  margin-bottom: 18px;
+}
+
+/* Footer */
+.blog-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.author {
+  font-size: 14px;
+  color: #0f172a;
+  font-weight: 500;
+}
+
+.read-more {
+  font-size: 14px;
+  font-weight: 600;
+  color: #0ea66b;
+  text-decoration: none;
+}
+
+.read-more:hover {
+  text-decoration: underline;
+}
+</style>
+
+<div class="blog-grid">
+
+  <!-- Card 1 -->
+  <div class="blog-card">
+    <div class="blog-image">
+      <img src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee" alt="Forest invasion">
+      <span class="badge">INVASIVE PLANTS</span>
+    </div>
+    <div class="blog-content">
+      <h3>Impact of Lantana camara in Tropical Forests</h3>
+      <p>How one ornamental plant became a major threat to tropical biodiversity across the globe.</p>
+      <div class="blog-footer">
+        <span class="author">Dr. Sarah Green</span>
+        <a href="https://www.bioinvasion.in/post-1" class="read-more">Read More →</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Card 2 -->
+  <div class="blog-card">
+    <div class="blog-image">
+      <img src="https://images.unsplash.com/photo-1501785888041-af3ef285b470" alt="Pathways">
+      <span class="badge">POLICY</span>
+    </div>
+    <div class="blog-content">
+      <h3>Pathways of Introduction: How Species Travel</h3>
+      <p>Understanding how invasive species cross borders is the first step in preventing their spread.</p>
+      <div class="blog-footer">
+        <span class="author">Michael Chen</span>
+        <a href="https://www.bioinvasion.in/post-2" class="read-more">Read More →</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Card 3 -->
+  <div class="blog-card">
+    <div class="blog-image">
+      <img src="https://images.unsplash.com/photo-1492724441997-5dc865305da7" alt="Wetlands restoration">
+      <span class="badge">WETLANDS</span>
+    </div>
+    <div class="blog-content">
+      <h3>Restoring Wetlands from Water Hyacinth</h3>
+      <p>Practical strategies for managing water hyacinth and restoring freshwater ecosystems.</p>
+      <div class="blog-footer">
+        <span class="author">Elena Rodriguez</span>
+        <a href="https://www.bioinvasion.in/post-3" class="read-more">Read More →</a>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+<!-- BLOG CARDS STYLE -->
+<style>
+/* Container */
+.blog-grid {
+  max-width: 1200px;
+  margin: auto;
+  padding: 20px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 24px;
+  font-family: Arial, sans-serif;
+}
+
+/* Card */
+.blog-card {
+  background: #ffffff;
+  border-radius: 18px;
+  overflow: hidden;
+  box-shadow: 0 8px 25px rgba(0,0,0,0.08);
+  transition: transform 0.3s ease;
+}
+
+.blog-card:hover {
+  transform: translateY(-6px);
+}
+
+/* Image */
+.blog-image {
+  position: relative;
+}
+
+.blog-image img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+}
+
+/* Badge */
+.badge {
+  position: absolute;
+  top: 14px;
+  left: 14px;
+  background: #0ea66b;
+  color: #fff;
+  font-size: 12px;
+  font-weight: 600;
+  padding: 5px 10px;
+  border-radius: 6px;
+}
+
+/* Content */
+.blog-content {
+  padding: 18px 20px 20px;
+}
+
+.blog-content h3 {
+  font-size: 20px;
+  margin: 6px 0 10px;
+  color: #0f172a;
+}
+
+.blog-content p {
+  font-size: 15px;
+  color: #475569;
+  line-height: 1.6;
+  margin-bottom: 18px;
+}
+
+/* Footer */
+.blog-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.author {
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.read-more {
+  font-size: 14px;
+  font-weight: 600;
+  color: #0ea66b;
+  text-decoration: none;
+}
+</style>
+
+
+
+    <section class="py-20 bg-emerald-900 text-white relative overflow-hidden">
+        <div class="absolute top-0 right-0 w-1/3 h-full opacity-10 pointer-events-none flex items-center justify-center">
+            <i data-lucide="leaf" class="w-64 h-64 rotate-45"></i>
+        </div>
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-10">
+            <h2 class="text-4xl font-bold mb-6">Join the Fight Against Invasive Species</h2>
+            <p class="text-xl text-emerald-100 max-w-2xl mx-auto mb-10">
+                Education is the most powerful tool we have. By understanding the science of bioinvasions, we can take better steps to protect our native ecosystems.
+            </p>
+            <a href="https://forms.gle/7PevLkctS7hrZZoo9" class="inline-block bg-white text-emerald-900 px-8 py-3 rounded-lg font-bold hover:bg-emerald-50 transition-colors">
+                Volunteer With Us
+            </a>
+        </div>
+    </section>
+
+    <script>
+        lucide.createIcons();
+    </script>
+</body>
+</html>
+
+
+
+<!-- FOOTER STYLE -->
+<style>
+.footer-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding: 24px 20px;
+  max-width: 1200px;
+  margin: auto;
+  background: #232931;
+  color: #fff;
+}
+
+.footer-section {
+  flex: 1;
+  min-width: 200px;
+  margin-bottom: 14px;
+}
+
+.logo-box {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.logo-image { width: 46px; }
+
+.logo-text {
+  font-size: 22px;
+  font-weight: 700;
+}
+
+.footer-section h3 {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.footer-section ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-section li {
+  margin-bottom: 8px;
+}
+
+.footer-section a {
+  color: #e5e7eb;
+  text-decoration: none;
+}
+
+.footer-section a:hover {
+  color: #fff;
+}
+
+/* Social Icons */
+.social-icons {
+  display: flex;
+  gap: 14px;
+}
+
+.social-icons a {
+  width: 36px;
+  height: 36px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  color: #fff;
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.social-icons a:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 18px rgba(0,0,0,0.3);
+}
+
+.facebook { background: #1877f2; }
+.instagram {
+  background: radial-gradient(circle at 30% 30%, #feda75, #d62976, #962fbf);
+}
+.linkedin { background: #0a66c2; }
+
+.footer-bottom {
+  width: 100%;
+  text-align: center;
+  margin-top: 16px;
+  padding-top: 12px;
+  border-top: 1px solid #3b414a;
+  font-size: 13px;
+}
+</style>
+
+<!-- FOOTER HTML -->
+<div class="footer-container">
+
+  <div class="footer-section">
+    <div class="logo-box">
+      <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiD3DR2vsJeyZnnwny-_-HSIh2IbOAgqgt0e6R3hFx8CLrHwJsnI5arCTMbUGVbQnzem0yGGVb-nvaUJCirEnFd3LYfs4HAYvY1cV1wCodNDGZXBQ-cNsrZy_XO1mtVT4OurMdQRU1rQYEG_QpF2H3Bk0cqiUrLkbtdZQnKUm4ZLjri03QyyGZyKGDEAuv3/s3464/unulogo.png""
+        class="logo-image">
+      <div class="logo-text">Bioinvasion.in</div>
+    </div>
+  </div>
+
+  <div class="footer-section">
+    <h3>Quick Links</h3>
+    <ul>
+      <li><a href="https://www.bioinvasion.in">Home</a></li>
+      <li><a href="https://www.bioinvasion.in/bioinvasion">Bioinvasion</a></li>
+      <li><a href="https://www.bioinvasion.in/blog">Blog</a></li>
+      <li><a href="https://forms.gle/7PevLkctS7hrZZoo9">Join Us</a></li>
+    </ul>
+  </div>
+
+  
+
+  <div class="footer-bottom">
+    © 2026 <strong>Bioinvasion.in</strong> · All rights reserved
+  </div>
+</div>
+
+<!-- LUCIDE ICON CDN (REQUIRED) -->
+<script src="https://unpkg.com/lucide@latest"></script>
+
+<!-- ICON INIT -->
+<script>
+  lucide.createIcons();
+</script>
