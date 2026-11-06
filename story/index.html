@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Discover the story of biological invasions: what invasive alien species are, how invasions happen, their impacts and how they can be managed.">
+  <meta name="theme-color" content="#173d32">
+  <title>The Story of Biological Invasion | Bioinvasion</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@500;600;700;800&display=swap" rel="stylesheet">
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <style>
+    :root{--forest:#173d32;--deep:#102c25;--leaf:#477b58;--sage:#e9f0e8;--paper:#f7f8f4;--ink:#1e2b25;--muted:#66736b;--line:#e1e7df;--shadow:0 18px 48px rgba(22,49,37,.10);--radius:22px}
+    *{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;color:var(--ink);background:#fff;font-family:"DM Sans",sans-serif;line-height:1.7}a{color:inherit;text-decoration:none}img{display:block;max-width:100%}.container{width:min(1160px,calc(100% - 44px));margin:auto}
+    .topline{background:var(--deep);color:#dce8dd;font-size:12px;letter-spacing:.04em}.topline .container{min-height:34px;display:flex;align-items:center;justify-content:space-between;gap:12px}.topline strong{color:#fff}
+    header{position:sticky;top:0;z-index:50;background:rgba(255,255,255,.95);backdrop-filter:blur(14px);border-bottom:1px solid var(--line)}.nav-wrap{min-height:78px;display:flex;align-items:center;justify-content:space-between;gap:24px}
+    .brand{display:inline-flex;align-items:center;gap:12px}.brand-mark{width:43px;height:43px;display:grid;place-items:center;border-radius:14px;background:var(--forest);color:white}.brand-name{font:800 19px/1.1 "Manrope",sans-serif;letter-spacing:-.04em;color:var(--forest)}.brand-sub{display:block;color:var(--muted);font-size:10px;letter-spacing:.13em;text-transform:uppercase;margin-top:4px}
+    nav{display:flex;align-items:center;gap:25px}nav a{color:#435148;font-size:13px;font-weight:700}nav a:hover,nav a.active{color:var(--leaf)}nav .nav-cta{padding:11px 16px;background:var(--forest);color:white;border-radius:999px}.menu-toggle{display:none;border:1px solid var(--line);background:white;color:var(--forest);border-radius:12px;width:43px;height:43px}
+    .hero{min-height:510px;position:relative;display:flex;align-items:center;color:white;overflow:hidden;background:var(--deep)}.hero:before{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(9,31,24,.91),rgba(13,39,29,.65) 58%,rgba(13,39,29,.25)),url("https://images.unsplash.com/photo-1542273917363-3b1817f69a2d?auto=format&fit=crop&q=85&w=2000") center/cover}.hero-content{position:relative;padding:90px 0 100px;max-width:790px}.eyebrow,.kicker{font-size:11px;font-weight:800;text-transform:uppercase;letter-spacing:.16em;color:#b9d3bd}.eyebrow:before{content:"";display:inline-block;width:26px;height:1px;background:#a7c6aa;vertical-align:middle;margin-right:10px}
+    h1,h2,h3{font-family:"Manrope",sans-serif}h1{font-size:clamp(42px,6.5vw,70px);line-height:1.06;letter-spacing:-.055em;margin:20px 0} .hero p{font-size:18px;color:#e0e9e1;max-width:650px;margin:0}.crumb{font-size:12px;color:#c9d8ca;margin-top:35px}.section{padding:84px 0}.soft{background:var(--paper)}.section-head{max-width:740px;margin-bottom:40px}.section-head.center{text-align:center;margin-inline:auto}.kicker{color:var(--leaf)}h2{font-size:clamp(29px,4vw,43px);line-height:1.16;letter-spacing:-.045em;margin:12px 0 15px}.section-head p,.muted{color:var(--muted)}.lead{font-size:18px;color:#526258;max-width:850px}
+    .definition{display:grid;grid-template-columns:1.1fr .9fr;gap:55px;align-items:center}.definition-image{height:380px;border-radius:var(--radius);overflow:hidden;box-shadow:var(--shadow)}.definition-image img{width:100%;height:100%;object-fit:cover}.note{padding:20px 22px;background:var(--sage);border-left:4px solid var(--leaf);border-radius:0 14px 14px 0;color:#405647;font-size:14px;margin-top:25px}
+    .compare{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}.compare-card{background:#fff;border:1px solid var(--line);border-radius:18px;padding:25px}.compare-card .num{font:800 12px "Manrope";color:var(--leaf);letter-spacing:.1em}.compare-card h3{font-size:20px;margin:10px 0}.compare-card p{font-size:14px;color:var(--muted);margin:0}.compare-card.featured{background:var(--forest);color:white;border-color:var(--forest)}.compare-card.featured p{color:#d0ddd2}.compare-card.featured .num{color:#b9d3bd}
+    .timeline{display:grid;grid-template-columns:repeat(4,1fr);gap:0;margin-top:42px;position:relative}.timeline:before{content:"";position:absolute;top:27px;left:12%;right:12%;height:2px;background:#cbdacb}.stage{position:relative;padding:0 17px;text-align:center}.stage-icon{position:relative;z-index:1;width:56px;height:56px;margin:0 auto 20px;border-radius:50%;display:grid;place-items:center;background:var(--forest);color:white;border:6px solid var(--sage);box-sizing:content-box}.stage h3{font-size:17px;margin:0 0 8px}.stage p{font-size:13px;color:var(--muted);margin:0}
+    .pathway-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}.pathway{background:white;border:1px solid var(--line);border-radius:18px;padding:24px}.pathway-icon{width:42px;height:42px;border-radius:13px;background:var(--sage);color:var(--forest);display:grid;place-items:center;margin-bottom:15px}.pathway h3{font-size:18px;margin:0 0 7px}.pathway p{font-size:13px;color:var(--muted);margin:0}
+    .impact-grid{display:grid;grid-template-columns:1fr 1fr;gap:18px}.impact{display:flex;gap:17px;padding:24px;background:white;border:1px solid var(--line);border-radius:18px}.impact .pathway-icon{flex:0 0 42px}.impact h3{font-size:17px;margin:0 0 6px}.impact p{font-size:13px;color:var(--muted);margin:0}
+    .region-grid{display:grid;grid-template-columns:1fr 1fr;gap:24px}.region{border-radius:20px;overflow:hidden;background:white;border:1px solid var(--line)}.region img{width:100%;height:230px;object-fit:cover}.region-body{padding:25px}.region-body h3{font-size:23px;margin:0 0 8px}.region-body p{font-size:14px;color:var(--muted);margin:0}
+    .response-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}.response{padding:26px;border-radius:18px;background:#214b3d;color:white}.response .pathway-icon{background:#dcebdd;color:var(--forest)}.response h3{font-size:19px;margin:0 0 8px}.response p{font-size:13px;color:#d3e1d5;margin:0}
+    .references{background:#fff;border:1px solid var(--line);border-radius:18px;padding:24px}.references h3{margin:0 0 12px}.references ul{margin:0;padding-left:20px;color:var(--muted);font-size:13px}.references a{color:var(--leaf);text-decoration:underline;text-underline-offset:3px}
+    .cta{background:var(--forest);color:white;text-align:center;padding:70px 20px}.cta p{max-width:650px;margin:0 auto 25px;color:#d0ddd2}.btn{display:inline-flex;align-items:center;gap:9px;padding:13px 19px;border-radius:999px;font-weight:700;font-size:13px;background:white;color:var(--forest)}
+    footer{background:var(--deep);color:#d7e2d8;padding:50px 0 22px}.footer-grid{display:grid;grid-template-columns:1.5fr 1fr 1fr;gap:35px;padding-bottom:32px}.footer-brand p{max-width:350px;color:#aebfb1;font-size:13px}.footer-title{color:white;font:700 14px "Manrope";margin-bottom:13px}.footer-links{display:grid;gap:9px}.footer-links a{color:#b9c9bb;font-size:13px}.footer-bottom{border-top:1px solid rgba(255,255,255,.14);padding-top:17px;display:flex;justify-content:space-between;color:#91a698;font-size:11px}
+    @media(max-width:850px){nav{gap:13px}nav a{font-size:11px}.definition{gap:30px}}@media(max-width:740px){.container{width:calc(100% - 32px)}.topline .container{justify-content:center}.topline .right{display:none}.nav-wrap{min-height:70px}.menu-toggle{display:grid;place-items:center}nav{display:none;position:absolute;top:70px;left:0;right:0;padding:16px 22px 22px;background:#fff;border-bottom:1px solid var(--line);box-shadow:0 16px 25px rgba(20,45,32,.08);align-items:stretch;flex-direction:column;gap:0}nav.open{display:flex}nav a{padding:12px 4px;font-size:14px}nav .nav-cta{text-align:center;margin-top:8px}.hero{min-height:470px}.hero-content{padding:75px 0}.section{padding:65px 0}.definition,.region-grid{grid-template-columns:1fr}.definition-image{height:280px}.compare,.pathway-grid,.response-grid{grid-template-columns:1fr}.timeline{grid-template-columns:1fr 1fr;row-gap:35px}.timeline:before{display:none}.impact-grid{grid-template-columns:1fr}.footer-grid{grid-template-columns:1fr 1fr}.footer-brand{grid-column:1/-1}}@media(max-width:450px){.footer-grid{grid-template-columns:1fr}.footer-brand{grid-column:auto}.footer-bottom{flex-direction:column;gap:8px}.hero p{font-size:16px}}
+  </style>
+</head>
+<body>
+  <div class="topline"><div class="container"><span>A knowledge and awareness platform on biological invasions</span><span class="right"><strong>A TBARC Initiative</strong> · Kerala, India</span></div></div>
+  <header><div class="container nav-wrap">
+    <a class="brand" href="/"><span class="brand-mark"><i data-lucide="sprout"></i></span><span><span class="brand-name">BIOINVASION</span><span class="brand-sub">A TBARC initiative</span></span></a>
+    <button class="menu-toggle" id="menuToggle" aria-label="Open navigation" aria-expanded="false"><i data-lucide="menu"></i></button>
+    <nav id="mainNav" aria-label="Main navigation">
+      <a href="/">Home</a><a class="active" href="/story/">The Story</a><a href="/invasive-watch-kerala/">Invasive Watch Kerala</a><a href="/blog/">News &amp; Blog</a><a class="nav-cta" href="/about/">About Bioinvasion ↗</a>
+    </nav>
+  </div></header>
+
+  <main>
+    <section class="hero"><div class="container"><div class="hero-content">
+      <span class="eyebrow">The science behind the spread</span>
+      <h1>The story of biological invasion.</h1>
+      <p>From arrival to establishment, spread and impact — explore how species move into new environments, reshape ecosystems and become a global conservation challenge.</p>
+      <div class="crumb">HOME &nbsp; / &nbsp; THE STORY OF BIOLOGICAL INVASION</div>
+    </div></div></section>
+
+    <section class="section"><div class="container definition">
+      <div><span class="kicker">01 · The concept</span><h2>What is biological invasion?</h2>
+        <p class="lead">Biological invasion is a process in which organisms are introduced, directly or indirectly, beyond their natural geographical range, establish populations and spread in a new region.</p>
+        <p class="muted">Not every species found outside its native range becomes invasive. Invasion science examines the conditions that allow some introduced species to establish, expand and cause ecological, economic or social impacts.</p>
+        <div class="note"><strong>Remember:</strong> “Non-native” describes where a species occurs in relation to its natural range. “Invasive” refers to a subset of introduced species that spread and cause, or are likely to cause, adverse impacts.</div>
+      </div>
+      <div class="definition-image"><img src="https://images.unsplash.com/photo-1501004318641-b39e6451bec6?auto=format&fit=crop&q=85&w=1100" alt="Dense vegetation in a natural ecosystem"></div>
+    </div></section>
+
+    <section class="section soft"><div class="container">
+      <div class="section-head center"><span class="kicker">02 · Know the difference</span><h2>Native, non-native and invasive</h2><p>These terms are related, but they do not mean the same thing.</p></div>
+      <div class="compare">
+        <article class="compare-card"><span class="num">01 / NATIVE</span><h3>Native species</h3><p>A species that occurs naturally in a region, having reached it through natural processes rather than human introduction.</p></article>
+        <article class="compare-card"><span class="num">02 / NON-NATIVE</span><h3>Non-native species</h3><p>A species occurring outside its natural geographical range because of intentional or unintentional human activities.</p></article>
+        <article class="compare-card featured"><span class="num">03 / INVASIVE ALIEN</span><h3>Invasive alien species</h3><p>An introduced species that establishes and spreads, causing or posing a risk of negative impacts on biodiversity, ecosystems or people.</p></article>
+      </div>
+    </div></section>
+
+    <section class="section"><div class="container">
+      <div class="section-head"><span class="kicker">03 · The invasion process</span><h2>How does an invasion unfold?</h2><p>Biological invasions are dynamic processes. A useful way to understand them is to follow the stages from introduction to impact.</p></div>
+      <div class="timeline">
+        <article class="stage"><div class="stage-icon"><i data-lucide="ship"></i></div><h3>Introduction</h3><p>A species is transported beyond its natural range, intentionally or accidentally.</p></article>
+        <article class="stage"><div class="stage-icon"><i data-lucide="sprout"></i></div><h3>Establishment</h3><p>The introduced organisms survive and reproduce, forming a self-sustaining population.</p></article>
+        <article class="stage"><div class="stage-icon"><i data-lucide="trending-up"></i></div><h3>Spread</h3><p>The population expands into new locations and may occupy larger areas.</p></article>
+        <article class="stage"><div class="stage-icon"><i data-lucide="alert-triangle"></i></div><h3>Impact</h3><p>The species causes ecological, economic or social harm in the invaded region.</p></article>
+      </div>
+      <p class="muted" style="font-size:12px;margin-top:30px">The stages are a simplified educational model. In real ecosystems, invasion pathways and outcomes can be complex, and not every introduced species progresses through every stage.</p>
+    </div></section>
+
+    <section class="section soft"><div class="container">
+      <div class="section-head"><span class="kicker">04 · Pathways</span><h2>How do species travel?</h2><p>Human activities connect distant ecosystems. Species can move across borders through several intentional and unintentional pathways.</p></div>
+      <div class="pathway-grid">
+        <article class="pathway"><div class="pathway-icon"><i data-lucide="ship"></i></div><h3>Trade and transport</h3><p>Organisms may travel as contaminants or stowaways in cargo, ships, vehicles, packaging and transported materials.</p></article>
+        <article class="pathway"><div class="pathway-icon"><i data-lucide="flower-2"></i></div><h3>Horticulture and pets</h3><p>Plants and animals introduced for gardens, aquariums, pets or ornamental use may escape or be released into nature.</p></article>
+        <article class="pathway"><div class="pathway-icon"><i data-lucide="wheat"></i></div><h3>Agriculture and forestry</h3><p>Species may be introduced for crops, pasture, forestry, biological control or other production-related purposes.</p></article>
+        <article class="pathway"><div class="pathway-icon"><i data-lucide="anchor"></i></div><h3>Waterways and shipping</h3><p>Marine and freshwater organisms can be transported in ballast water, on vessel surfaces or through connected waterways.</p></article>
+        <article class="pathway"><div class="pathway-icon"><i data-lucide="plane"></i></div><h3>Travel and tourism</h3><p>Seeds, insects and other organisms can move unintentionally with travellers, luggage, equipment and outdoor goods.</p></article>
+        <article class="pathway"><div class="pathway-icon"><i data-lucide="hand-heart"></i></div><h3>Intentional release</h3><p>Species may be deliberately released into the environment, sometimes without anticipating their future spread or impacts.</p></article>
+      </div>
+    </div></section>
+
+    <section class="section"><div class="container">
+      <div class="section-head"><span class="kicker">05 · Consequences</span><h2>Why do biological invasions matter?</h2><p>Impacts vary between species and ecosystems. They can affect biodiversity, ecosystem functioning and human well-being.</p></div>
+      <div class="impact-grid">
+        <article class="impact"><div class="pathway-icon"><i data-lucide="trees"></i></div><div><h3>Biodiversity and native species</h3><p>Invasive species may compete with native organisms, prey on them, spread pathogens or alter habitats.</p></div></article>
+        <article class="impact"><div class="pathway-icon"><i data-lucide="waves"></i></div><div><h3>Ecosystem processes</h3><p>Invasions can change nutrient cycling, water availability, disturbance patterns and ecosystem structure.</p></div></article>
+        <article class="impact"><div class="pathway-icon"><i data-lucide="sprout"></i></div><div><h3>Agriculture and production</h3><p>Some invasive species affect crops, grazing lands, forestry, fisheries and other livelihood activities.</p></div></article>
+        <article class="impact"><div class="pathway-icon"><i data-lucide="users"></i></div><div><h3>People and communities</h3><p>Impacts may affect health, access to natural resources, recreation, cultural values and local economies.</p></div></article>
+      </div>
+    </div></section>
+
+    <section class="section soft"><div class="container">
+      <div class="section-head center"><span class="kicker">06 · A global and local challenge</span><h2>Biological invasions across scales</h2><p>Invasions occur in terrestrial, freshwater and marine environments. Their causes and consequences are shaped by local ecological and social conditions.</p></div>
+      <div class="region-grid">
+        <article class="region"><img src="https://images.unsplash.com/photo-1448375240586-882707db888b?auto=format&fit=crop&q=85&w=1000" alt="Forest ecosystem"><div class="region-body"><h3>A global perspective</h3><p>Species introductions and spread are connected to global trade, travel, land-use change and other human activities. International cooperation and prevention are important because pathways cross political boundaries.</p></div></article>
+        <article class="region"><img src="https://images.unsplash.com/photo-1500375592092-40eb2168fd21?auto=format&fit=crop&q=85&w=1000" alt="Freshwater and wetland environment"><div class="region-body"><h3>India and Kerala</h3><p>India's varied landscapes include forests, grasslands, islands, rivers, lakes and wetlands. Kerala's diverse ecosystems make monitoring, documentation and context-specific management of invasive species especially important.</p></div></article>
+      </div>
+      <div class="note" style="margin-top:24px"><strong>Explore locally:</strong> Visit <a href="/invasive-watch-kerala/" style="color:var(--leaf);font-weight:800;text-decoration:underline">Invasive Watch Kerala</a> to learn about the TBARC citizen-science initiative documenting invasive alien species across Kerala.</div>
+    </div></section>
+
+    <section class="section"><div class="container">
+      <div class="section-head"><span class="kicker">07 · Prevention and management</span><h2>What can we do?</h2><p>Preventing new introductions and detecting emerging invasions early are often more effective than trying to manage widespread established populations.</p></div>
+      <div class="response-grid">
+        <article class="response"><div class="pathway-icon"><i data-lucide="shield-check"></i></div><h3>Prevention</h3><p>Reduce risky introductions through pathway management, awareness, biosecurity and responsible trade and planting practices.</p></article>
+        <article class="response"><div class="pathway-icon"><i data-lucide="scan-search"></i></div><h3>Early detection</h3><p>Monitor ecosystems, document observations, verify identifications and report new occurrences promptly.</p></article>
+        <article class="response"><div class="pathway-icon"><i data-lucide="leaf"></i></div><h3>Management and restoration</h3><p>Use context-appropriate control, long-term monitoring and restoration to support native biodiversity and ecosystem recovery.</p></article>
+      </div>
+    </div></section>
+
+    <section class="section soft"><div class="container">
+      <div class="section-head"><span class="kicker">Further reading</span><h2>Explore the science</h2><p>These authoritative resources are useful starting points for learning more about invasive alien species and invasion science.</p></div>
+      <div class="references"><h3>Selected resources</h3><ul>
+        <li><a href="https://www.ipbes.net/ias" target="_blank" rel="noopener">IPBES — Invasive Alien Species Assessment</a>: global assessment of drivers, impacts and response options.</li>
+        <li><a href="https://www.cbd.int/invasive/" target="_blank" rel="noopener">Convention on Biological Diversity — Invasive Alien Species</a>: international policy context and resources.</li>
+        <li><a href="https://www.iucn.org/our-work/topic/invasive-alien-species" target="_blank" rel="noopener">IUCN — Invasive Alien Species</a>: information on prevention, management and biodiversity impacts.</li>
+      </ul></div>
+    </div></section>
+
+    <section class="cta"><div class="container"><span class="eyebrow">Observe · Document · Understand</span><h2>Be part of understanding biological invasions.</h2><p>Explore the Invasive Watch Kerala initiative and contribute to documenting invasive alien species across the state.</p><a class="btn" href="/invasive-watch-kerala/">Explore Invasive Watch Kerala <i data-lucide="arrow-right"></i></a></div></section>
+  </main>
+
+  <footer><div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand"><a class="brand" href="/"><span class="brand-mark" style="background:#477b58"><i data-lucide="sprout"></i></span><span><span class="brand-name" style="color:white">BIOINVASION</span><span class="brand-sub" style="color:#aebfb1">A TBARC initiative</span></span></a><p>A knowledge and awareness platform sharing the science, impacts and stories of biological invasions.</p></div>
+      <div><div class="footer-title">Explore</div><div class="footer-links"><a href="/">Home</a><a href="/story/">The Story of Biological Invasion</a><a href="/invasive-watch-kerala/">Invasive Watch Kerala</a></div></div>
+      <div><div class="footer-title">Discover more</div><div class="footer-links"><a href="/blog/">News &amp; Blog</a><a href="/about/">About Bioinvasion</a><a href="https://tbarc.in/" target="_blank" rel="noopener">TBARC website ↗</a></div></div>
+    </div>
+    <div class="footer-bottom"><span>© 2026 Bioinvasion · A TBARC Initiative</span><span>Science · Awareness · Biodiversity</span></div>
+  </div></footer>
+  <script>
+    lucide.createIcons();
+    const toggle=document.getElementById("menuToggle"),nav=document.getElementById("mainNav");
+    toggle.addEventListener("click",()=>{const open=nav.classList.toggle("open");toggle.setAttribute("aria-expanded",String(open));toggle.innerHTML=open?'<i data-lucide="x"></i>':'<i data-lucide="menu"></i>';lucide.createIcons();});
+    nav.querySelectorAll("a").forEach(a=>a.addEventListener("click",()=>{nav.classList.remove("open");toggle.setAttribute("aria-expanded","false");toggle.innerHTML='<i data-lucide="menu"></i>';lucide.createIcons();}));
+  </script>
+</body>
+</html>
