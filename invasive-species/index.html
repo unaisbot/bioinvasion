@@ -28,6 +28,91 @@ nav{display:flex;align-items:center;gap:21px}nav a{color:#435148;font-size:12px;
 .cta{background:var(--forest);color:white;text-align:center;padding:62px 20px}.cta p{max-width:670px;margin:0 auto 23px;color:#d0ddd2}.btn{display:inline-flex;align-items:center;gap:9px;padding:13px 19px;border-radius:999px;font-weight:700;font-size:13px;background:white;color:var(--forest)}
 footer{background:var(--deep);color:#d7e2d8;padding:50px 0 22px}.footer-grid{display:grid;grid-template-columns:1.5fr 1fr 1fr;gap:35px;padding-bottom:32px}.footer-brand p{max-width:350px;color:#aebfb1;font-size:13px}.footer-title{color:white;font:700 14px "Manrope";margin-bottom:13px}.footer-links{display:grid;gap:9px}.footer-links a{color:#b9c9bb;font-size:13px}.footer-bottom{border-top:1px solid rgba(255,255,255,.14);padding-top:17px;display:flex;justify-content:space-between;color:#91a698;font-size:11px}
 @media(max-width:900px){nav{gap:12px}nav a{font-size:11px}.species-grid{grid-template-columns:repeat(2,1fr)}.directory-intro{display:block}.scope-note{margin-top:18px;max-width:none}}@media(max-width:740px){.container{width:calc(100% - 32px)}.topline .container{justify-content:center}.topline .right{display:none}.nav-wrap{min-height:70px}.menu-toggle{display:grid;place-items:center}nav{display:none;position:absolute;top:70px;left:0;right:0;padding:16px 22px 22px;background:#fff;border-bottom:1px solid var(--line);box-shadow:0 16px 25px rgba(20,45,32,.08);align-items:stretch;flex-direction:column;gap:0}nav.open{display:flex}nav a{padding:12px 4px;font-size:14px}nav .nav-cta{text-align:center;margin-top:8px}.hero{min-height:360px}.hero-content{padding:60px 0}.section{padding:52px 0}.tools{padding:18px}.modal-top{grid-template-columns:1fr}.modal-photo{height:220px;min-height:220px}.modal-heading{padding:25px}.modal-content{padding:5px 25px 28px}.footer-grid{grid-template-columns:1fr 1fr}.footer-brand{grid-column:1/-1}}@media(max-width:520px){.species-grid{grid-template-columns:1fr}.species-photo{height:235px}.search-row{display:block}.sort-label{display:block;margin-top:12px}.results-line{align-items:flex-start;flex-direction:column;gap:4px}.profile-modal{padding:10px}.modal-panel{max-height:calc(100vh - 20px)}.footer-grid{grid-template-columns:1fr}.footer-brand{grid-column:auto}.footer-bottom{flex-direction:column;gap:8px}.hero p{font-size:16px}}
+
+/* Scientific assessment framework */
+.framework-intro{max-width:790px;margin-bottom:30px}
+.framework-intro p{color:var(--muted);font-size:14px;margin:0}
+.framework-shell{display:grid;grid-template-columns:1.12fr .88fr;gap:22px;align-items:stretch}
+.flow-panel,.attributes-panel{background:#fff;border:1px solid var(--line);border-radius:20px;padding:24px;box-shadow:0 8px 30px rgba(22,49,37,.045)}
+.panel-heading{display:flex;align-items:center;gap:11px;margin-bottom:20px}
+.panel-heading .panel-icon{width:42px;height:42px;display:grid;place-items:center;border-radius:13px;background:var(--sage);color:var(--forest);flex:none}
+.panel-heading h3{font:700 18px "Manrope";margin:0}
+.panel-heading p{font-size:11px;color:var(--muted);margin:2px 0 0}
+.flowchart{position:relative;display:grid;grid-template-columns:minmax(0,1fr) 92px;gap:12px;align-items:stretch}
+.flow-main{display:flex;flex-direction:column;align-items:center;min-width:0}
+.flow-step{width:100%;border:1px solid #91bd77;background:#fbfdf9;border-radius:11px;padding:13px 15px;text-align:center}
+.flow-step .step-no{display:block;color:var(--leaf);font-size:9px;font-weight:800;letter-spacing:.12em;text-transform:uppercase;margin-bottom:4px}
+.flow-step p{font:500 12px/1.5 "DM Sans";color:#34483a;margin:0}
+.flow-connector{height:27px;width:2px;background:#86b95e;position:relative;flex:none}
+.flow-connector:after{content:"";position:absolute;bottom:-1px;left:-4px;border-left:5px solid transparent;border-right:5px solid transparent;border-top:7px solid #86b95e}
+.flow-decision{width:54px;height:54px;border:1.5px solid #86b95e;background:#fff;transform:rotate(45deg);display:grid;place-items:center;flex:none}
+.flow-decision span{transform:rotate(-45deg);font:700 11px "Manrope";color:var(--forest)}
+.flow-yes{font-size:10px;color:#477b58;font-weight:800;margin:1px 0 0}
+.flow-no-rail{display:flex;flex-direction:column;align-items:center;justify-content:space-between;padding:62px 0 10px;position:relative}
+.no-branch{position:relative;z-index:1;display:flex;align-items:center;justify-content:center;gap:5px;color:#66736b;font-size:10px;font-weight:700;background:#fff;padding:4px 0;width:100%}
+.no-branch:before{content:"";height:1px;background:#aeb9ae;position:absolute;right:100%;width:12px}
+.no-branch:after{content:"";height:1px;background:#aeb9ae;position:absolute;left:100%;width:12px}
+.no-outcome{margin-top:auto;background:#f1f4f0;border:1px solid #cbd5ca;border-radius:10px;padding:11px 8px;text-align:center;font-size:10px;line-height:1.4;color:#526258;width:100%}
+.no-outcome strong{display:block;color:#34483a;font-size:11px;margin-bottom:4px}
+.flow-result{width:100%;border:1px solid #83ad78;background:#eaf3e8;border-radius:11px;padding:14px;text-align:center;margin-top:0}
+.flow-result strong{display:block;color:#245b36;font:700 13px "Manrope";margin:5px 0}
+.flow-result span{font-size:10px;color:#49664d}
+.attributes-groups{display:grid;gap:15px}
+.attribute-group{border:1px solid var(--line);border-radius:13px;overflow:hidden}
+.attribute-group h4{margin:0;padding:10px 13px;background:#f0f5ef;color:var(--forest);font:800 11px "Manrope";letter-spacing:.06em;text-transform:uppercase}
+.attribute-row{display:grid;grid-template-columns:54px 1fr;gap:10px;padding:11px 13px;border-top:1px solid var(--line);align-items:start}
+.attribute-code{display:inline-flex;justify-content:center;align-items:center;min-height:26px;padding:3px 6px;background:var(--sage);color:var(--forest);border-radius:7px;font:800 10px "Manrope"}
+.attribute-row p{font-size:11px;color:#526258;margin:2px 0 0;line-height:1.45}
+.attribute-row strong{color:var(--ink)}
+.framework-caveat{display:flex;gap:11px;align-items:flex-start;margin-top:18px;padding:15px 17px;border-radius:13px;background:#f6f7f3;border:1px solid var(--line);color:var(--muted);font-size:11px}
+.framework-caveat i{color:var(--leaf);width:17px;flex:none;margin-top:2px}
+@media(max-width:900px){.framework-shell{grid-template-columns:1fr}.flowchart{max-width:600px;margin:auto}.attributes-groups{grid-template-columns:repeat(2,1fr)}.attribute-group:last-child{grid-column:1/-1}}
+@media(max-width:560px){.flow-panel,.attributes-panel{padding:17px}.flowchart{grid-template-columns:minmax(0,1fr) 70px;gap:8px}.flow-step{padding:11px 9px}.flow-step p{font-size:10px}.flow-connector{height:22px}.flow-decision{width:45px;height:45px}.flow-no-rail{padding-top:56px}.no-branch{font-size:9px}.no-outcome{font-size:9px;padding:8px 5px}.attributes-groups{grid-template-columns:1fr}.attribute-group:last-child{grid-column:auto}}
+
+
+/* Corrected responsive decision-flow layout */
+.flowchart{display:flex;flex-direction:column;gap:0;max-width:100%}
+.flow-stage-row{display:grid;grid-template-columns:minmax(0,1fr) 100px;gap:10px;align-items:center}
+.flow-step{width:100%;border:1px solid #91bd77;background:#fbfdf9;border-radius:11px;padding:14px 16px;text-align:center;min-width:0}
+.flow-step .step-no{display:block;color:var(--leaf);font-size:9px;font-weight:800;letter-spacing:.12em;text-transform:uppercase;margin-bottom:5px}
+.flow-step p{font:500 12px/1.55 "DM Sans";color:#34483a;margin:0}
+.no-branch-arrow{display:flex;align-items:center;justify-content:flex-start;gap:6px;color:#647368;font-size:11px;font-weight:800;white-space:nowrap;min-width:0}
+.no-branch-arrow .branch-line{height:1px;background:#91a294;flex:1;min-width:12px;position:relative}
+.no-branch-arrow .branch-line:after{content:"";position:absolute;right:0;top:-3px;border-top:4px solid transparent;border-bottom:4px solid transparent;border-left:6px solid #91a294}
+.flow-down{display:flex;flex-direction:column;align-items:center;width:calc(100% - 110px);height:68px;position:relative}
+.flow-down .stem{width:2px;height:18px;background:#86b95e}
+.flow-down .flow-decision{width:45px;height:45px;border:1.5px solid #86b95e;background:#fff;transform:rotate(45deg);display:grid;place-items:center;flex:none}
+.flow-down .flow-decision span{transform:rotate(-45deg);font:700 11px "Manrope";color:var(--forest)}
+.flow-down .yes-arrow{display:flex;flex-direction:column;align-items:center;gap:1px;color:#477b58;font-size:9px;font-weight:800;line-height:1}
+.flow-down .yes-arrow:after{content:"";width:0;height:0;border-left:5px solid transparent;border-right:5px solid transparent;border-top:7px solid #86b95e}
+.flow-result{width:calc(100% - 110px);border:1px solid #83ad78;background:#eaf3e8;border-radius:11px;padding:14px;text-align:center;margin-top:0}
+.flow-result strong{display:block;color:#245b36;font:700 13px "Manrope";margin:5px 0}
+.flow-result span{font-size:10px;color:#49664d}
+.no-outcome-summary{margin:18px 0 0 auto;width:calc(100% - 110px);border:1px solid #cbd5ca;background:#f1f4f0;border-radius:11px;padding:12px 14px;color:#526258;font-size:10px;line-height:1.45}
+.no-outcome-summary strong{display:block;color:#34483a;font-size:11px;margin-bottom:3px}
+@media(max-width:560px){
+ .flow-stage-row{grid-template-columns:minmax(0,1fr) 68px;gap:7px}
+ .flow-step{padding:11px 9px}
+ .flow-step p{font-size:10px}
+ .no-branch-arrow{font-size:9px;gap:3px}
+ .no-branch-arrow .branch-line{min-width:7px}
+ .flow-down,.flow-result,.no-outcome-summary{width:calc(100% - 75px)}
+ .flow-down{height:65px}
+ .flow-down .flow-decision{width:40px;height:40px}
+}
+
+
+.flowchart-svg-wrap{width:100%;max-width:100%;overflow:hidden}
+.assessment-svg{display:block;width:100%;height:auto;max-width:100%;font-family:"DM Sans",sans-serif}
+@media(max-width:560px){
+ .assessment-svg{width:100%}
+}
+
+
+.reference-card{margin-top:15px;padding:17px 19px;border:1px solid var(--line);border-radius:14px;background:#fff;display:flex;gap:13px;align-items:flex-start}
+.reference-card .ref-icon{width:36px;height:36px;border-radius:11px;background:var(--sage);color:var(--forest);display:grid;place-items:center;flex:none}
+.reference-card p{margin:0;color:#526258;font-size:12px;line-height:1.65}
+
 </style>
 </head>
 <body>
@@ -47,6 +132,160 @@ footer{background:var(--deep);color:#d7e2d8;padding:50px 0 22px}.footer-grid{dis
 <section class="section"><div class="container">
 <div class="directory-intro"><div class="section-head"><span class="kicker">Explore the directory</span><h2>Discover species, one profile at a time</h2><p>Search by scientific or common name, or browse the collection by plant type and habitat.</p></div>
 <div class="scope-note"><strong>Kerala-focused collection</strong><br>Initial profiles prioritise species relevant to Kerala. The directory can expand as species records and references are reviewed.</div></div>
+
+<section class="section soft" id="assessment-framework">
+  <div class="container">
+    <div class="framework-intro">
+      <span class="kicker">Scientific assessment</span>
+      <h2>How do we identify an invasive alien species?</h2>
+      <p>Bioinvasion presents the following assessment framework and attributes as a guide for understanding the criteria used to assess invasive status in the Indian context.</p>
+    </div>
+    <div class="framework-shell">
+      <div class="flow-panel">
+        <div class="panel-heading">
+          <span class="panel-icon"><i data-lucide="git-branch"></i></span>
+          <div><h3>Species assessment flowchart</h3><p>Follow the decision stages from introduction to impact.</p></div>
+        </div>
+        <div class="flowchart-svg-wrap">
+          <svg class="assessment-svg" viewBox="0 0 720 1080" role="img" aria-labelledby="assessmentSvgTitle assessmentSvgDesc">
+            <title id="assessmentSvgTitle">Species assessment flowchart</title>
+            <desc id="assessmentSvgDesc">Four sequential questions. A Yes answer proceeds down to the next question. A No answer follows a rightward arrow to a common vertical route and then left to the outcome that the species does not fall under the invasive alien species category in India.</desc>
+            <defs>
+              <marker id="yesArrowHead" markerWidth="8" markerHeight="8" refX="6" refY="4" orient="auto" markerUnits="strokeWidth"><path d="M0,0 L8,4 L0,8 Z" fill="#83bd4d"/></marker>
+              <marker id="noArrowHead" markerWidth="8" markerHeight="8" refX="6" refY="4" orient="auto" markerUnits="strokeWidth"><path d="M0,0 L8,4 L0,8 Z" fill="#83bd4d"/></marker>
+            </defs>
+            <style>
+              .qbox{fill:#fff;stroke:#83bd4d;stroke-width:1.5}
+              .qtitle{font:700 12px 'DM Sans',sans-serif;letter-spacing:1.2px;fill:#477b58}
+              .qtext{font:15px 'DM Sans',sans-serif;fill:#273b30}
+              .diamond{fill:#fff;stroke:#83bd4d;stroke-width:1.7}
+              .iftext{font:700 14px 'DM Sans',sans-serif;fill:#273b30}
+              .yesline,.noline{fill:none;stroke:#83bd4d;stroke-width:1.7}
+              .yeslabel,.nolabel{font:700 12px 'DM Sans',sans-serif;fill:#477b58}
+              .nolabel{fill:#59695d}
+              .resultyes{fill:#eaf3e8;stroke:#78a96d;stroke-width:1.5}
+              .resultno{fill:#f1f4f0;stroke:#aebcae;stroke-width:1.5}
+              .resulttitle{font:700 15px 'Manrope',sans-serif;fill:#245b36}
+              .resulttext{font:12px 'DM Sans',sans-serif;fill:#49664d}
+              .resultnotitle{font:700 13px 'Manrope',sans-serif;fill:#34483a}
+              .resultnotext{font:12px 'DM Sans',sans-serif;fill:#526258}
+            </style>
+
+            <!-- Stage 1 -->
+            <rect class="qbox" x="20" y="18" width="500" height="88" rx="10"/>
+            <text class="qtitle" x="270" y="43" text-anchor="middle">STAGE 1 · INTRODUCTION</text>
+            <text class="qtext" x="270" y="67" text-anchor="middle">
+              <tspan x="270" dy="0">Has the species been introduced from outside the</tspan>
+              <tspan x="270" dy="20">political boundary of India? <tspan font-style="italic">(i.e. non-native/alien)</tspan></tspan>
+            </text>
+            <path class="yesline" d="M270 106 V126"/>
+            <polygon class="diamond" points="270,126 307,163 270,200 233,163"/>
+            <text class="iftext" x="270" y="168" text-anchor="middle">If</text>
+            <path class="yesline" d="M270 200 V222" marker-end="url(#yesArrowHead)"/>
+            <text class="yeslabel" x="284" y="216">YES</text>
+            <path class="noline" d="M307 163 H640" marker-end="url(#noArrowHead)"/>
+            <text class="nolabel" x="445" y="151" text-anchor="middle">NO</text>
+
+            <!-- Stage 2 -->
+            <rect class="qbox" x="20" y="224" width="500" height="88" rx="10"/>
+            <text class="qtitle" x="270" y="249" text-anchor="middle">STAGE 2 · ESTABLISHMENT</text>
+            <text class="qtext" x="270" y="274" text-anchor="middle">
+              <tspan x="270" dy="0">Has the species established a reproductive</tspan>
+              <tspan x="270" dy="20">population within the political boundary of India?</tspan>
+            </text>
+            <path class="yesline" d="M270 312 V332"/>
+            <polygon class="diamond" points="270,332 307,369 270,406 233,369"/>
+            <text class="iftext" x="270" y="374" text-anchor="middle">If</text>
+            <path class="yesline" d="M270 406 V428" marker-end="url(#yesArrowHead)"/>
+            <text class="yeslabel" x="284" y="422">YES</text>
+            <path class="noline" d="M307 369 H640" marker-end="url(#noArrowHead)"/>
+            <text class="nolabel" x="445" y="357" text-anchor="middle">NO</text>
+
+            <!-- Stage 3 -->
+            <rect class="qbox" x="20" y="430" width="500" height="88" rx="10"/>
+            <text class="qtitle" x="270" y="455" text-anchor="middle">STAGE 3 · SCIENTIFIC REPORTING</text>
+            <text class="qtext" x="270" y="480" text-anchor="middle">
+              <tspan x="270" dy="0">Has the species been reported as an invasive alien</tspan>
+              <tspan x="270" dy="20">species in scientific studies conducted in India?</tspan>
+            </text>
+            <path class="yesline" d="M270 518 V538"/>
+            <polygon class="diamond" points="270,538 307,575 270,612 233,575"/>
+            <text class="iftext" x="270" y="580" text-anchor="middle">If</text>
+            <path class="yesline" d="M270 612 V634" marker-end="url(#yesArrowHead)"/>
+            <text class="yeslabel" x="284" y="628">YES</text>
+            <path class="noline" d="M307 575 H640" marker-end="url(#noArrowHead)"/>
+            <text class="nolabel" x="445" y="563" text-anchor="middle">NO</text>
+
+            <!-- Stage 4 -->
+            <rect class="qbox" x="20" y="636" width="500" height="106" rx="10"/>
+            <text class="qtitle" x="270" y="661" text-anchor="middle">STAGE 4 · RECOGNISED IMPACTS</text>
+            <text class="qtext" x="270" y="686" text-anchor="middle">
+              <tspan x="270" dy="0">Has the species been well-recognised for its negative</tspan>
+              <tspan x="270" dy="20">impacts on biodiversity/ecosystem functions and services/</tspan>
+              <tspan x="270" dy="20">economy, health, social, and cultural system?</tspan>
+            </text>
+            <path class="yesline" d="M270 742 V760"/>
+            <polygon class="diamond" points="270,760 307,797 270,834 233,797"/>
+            <text class="iftext" x="270" y="802" text-anchor="middle">If</text>
+            <path class="yesline" d="M270 834 V854" marker-end="url(#yesArrowHead)"/>
+            <text class="yeslabel" x="284" y="849">YES</text>
+            <path class="noline" d="M307 797 H640" marker-end="url(#noArrowHead)"/>
+            <text class="nolabel" x="445" y="785" text-anchor="middle">NO</text>
+
+            <!-- Shared NO route and bottom outcome -->
+            <path class="noline" d="M640 163 V1021 H640" marker-end="url(#noArrowHead)"/>
+            <rect class="resultno" x="350" y="980" width="290" height="82" rx="10"/>
+            <text class="resultnotitle" x="495" y="1010" text-anchor="middle">Does not qualify under this framework</text>
+            <text class="resultnotext" x="495" y="1033" text-anchor="middle">
+              <tspan x="495" dy="0">The species does not fall under the category</tspan>
+              <tspan x="495" dy="17">of invasive alien species in India.</tspan>
+            </text>
+
+            <!-- YES outcome -->
+            <rect class="resultyes" x="20" y="856" width="500" height="100" rx="10"/>
+            <text class="resulttitle" x="270" y="892" text-anchor="middle">Invasive alien species</text>
+            <text class="resulttext" x="270" y="918" text-anchor="middle">
+              <tspan x="270" dy="0">The species warrants consideration for declaration</tspan>
+              <tspan x="270" dy="17">as an invasive alien species in India.</tspan>
+            </text>
+          </svg>
+        </div>
+      </div>
+      <div class="attributes-panel">
+        <div class="panel-heading">
+          <span class="panel-icon"><i data-lucide="list-checks"></i></span>
+          <div><h3>Invasive attributes</h3><p>Attributes used to confirm invasive status in the reported Indian ecosystems.</p></div>
+        </div>
+        <div class="attributes-groups">
+          <div class="attribute-group">
+            <h4>01 · Invasiveness</h4>
+            <div class="attribute-row"><span class="attribute-code">IE</span><p><strong>Invasive Elsewhere</strong></p></div>
+            <div class="attribute-row"><span class="attribute-code">RMS</span><p><strong>Rapid Multiplication and Spread</strong> in different ecosystems</p></div>
+            <div class="attribute-row"><span class="attribute-code">MMR</span><p><strong>Multiple Modes of Reproduction</strong></p></div>
+            <div class="attribute-row"><span class="attribute-code">MMD</span><p><strong>Multiple Modes of Dispersion</strong></p></div>
+          </div>
+          <div class="attribute-group">
+            <h4>02 · Impacts</h4>
+            <div class="attribute-row"><span class="attribute-code">B1</span><p><strong>Affecting ecosystem functions and services</strong></p></div>
+            <div class="attribute-row"><span class="attribute-code">B2</span><p><strong>Biodiversity loss</strong></p></div>
+            <div class="attribute-row"><span class="attribute-code">B3</span><p><strong>Economic loss and health hazard</strong></p></div>
+          </div>
+          <div class="attribute-group">
+            <h4>03 · Invasion areas · Continues spread</h4>
+            <div class="attribute-row"><span class="attribute-code">RE</span><p><strong>Range Extension</strong></p></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="framework-caveat"><i data-lucide="info"></i><span><strong>Interpretation:</strong> This framework reproduces the decision questions and attribute codes supplied for Bioinvasion. It is presented as an assessment framework, not as a legal declaration or a universal definition. The source publication/reference for this framework should be added here before public launch.</span></div>
+
+    <div class="reference-card" aria-label="Publication reference">
+      <span class="ref-icon"><i data-lucide="book-open"></i></span>
+      <p><strong>Source:</strong> Sandilyan, S. (n.d.). <em>Invasive Alien Species of India.</em> Centre for Biodiversity Policy and Law (CEBPOL), National Biodiversity Authority, Ministry of Environment, Forests and Climate Change, Government of India, Chennai, India.</p>
+    </div>
+  </div>
+</section>
+
 <div class="tools">
 <div class="search-row"><label class="search"><i data-lucide="search"></i><input id="speciesSearch" type="search" placeholder="Search scientific name or common name..." aria-label="Search species"></label><span class="sort-label">Browse verified profile entries</span></div>
 <div class="filters" id="filters" aria-label="Filter species">
