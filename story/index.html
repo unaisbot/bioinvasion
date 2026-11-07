@@ -3,8 +3,20 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Discover the story of biological invasions: what invasive alien species are, how invasions happen, their impacts and how they can be managed.">
+  <meta name="description" content="Explore the story of biological invasions, including introduction, establishment, spread, ecological impacts and management.">
   <meta name="theme-color" content="#173d32">
+  <link rel="icon" type="image/png" href="/images/favicon.png">
+  <link rel="shortcut icon" href="/images/favicon.png">
+  <link rel="apple-touch-icon" href="/images/favicon.png">
+  <link rel="canonical" href="https://bioinvasion.in/story/">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Bioinvasion">
+  <meta property="og:title" content="The Story of Biological Invasion | Bioinvasion">
+  <meta property="og:description" content="Explore the story of biological invasions, including introduction, establishment, spread, ecological impacts and management.">
+  <meta property="og:url" content="https://bioinvasion.in/story/">
+  <meta property="og:image" content="https://bioinvasion.in/images/logo.png">
+  <meta name="twitter:card" content="summary">
+
   <title>The Story of Biological Invasion | Bioinvasion</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -30,16 +42,43 @@
     .cta{background:var(--forest);color:white;text-align:center;padding:70px 20px}.cta p{max-width:650px;margin:0 auto 25px;color:#d0ddd2}.btn{display:inline-flex;align-items:center;gap:9px;padding:13px 19px;border-radius:999px;font-weight:700;font-size:13px;background:white;color:var(--forest)}
     footer{background:var(--deep);color:#d7e2d8;padding:50px 0 22px}.footer-grid{display:grid;grid-template-columns:1.5fr 1fr 1fr;gap:35px;padding-bottom:32px}.footer-brand p{max-width:350px;color:#aebfb1;font-size:13px}.footer-title{color:white;font:700 14px "Manrope";margin-bottom:13px}.footer-links{display:grid;gap:9px}.footer-links a{color:#b9c9bb;font-size:13px}.footer-bottom{border-top:1px solid rgba(255,255,255,.14);padding-top:17px;display:flex;justify-content:space-between;color:#91a698;font-size:11px}
     @media(max-width:850px){nav{gap:13px}nav a{font-size:11px}.definition{gap:30px}}@media(max-width:740px){.container{width:calc(100% - 32px)}.topline .container{justify-content:center}.topline .right{display:none}.nav-wrap{min-height:70px}.menu-toggle{display:grid;place-items:center}nav{display:none;position:absolute;top:70px;left:0;right:0;padding:16px 22px 22px;background:#fff;border-bottom:1px solid var(--line);box-shadow:0 16px 25px rgba(20,45,32,.08);align-items:stretch;flex-direction:column;gap:0}nav.open{display:flex}nav a{padding:12px 4px;font-size:14px}nav .nav-cta{text-align:center;margin-top:8px}.hero{min-height:470px}.hero-content{padding:75px 0}.section{padding:65px 0}.definition,.region-grid{grid-template-columns:1fr}.definition-image{height:280px}.compare,.pathway-grid,.response-grid{grid-template-columns:1fr}.timeline{grid-template-columns:1fr 1fr;row-gap:35px}.timeline:before{display:none}.impact-grid{grid-template-columns:1fr}.footer-grid{grid-template-columns:1fr 1fr}.footer-brand{grid-column:1/-1}}@media(max-width:450px){.footer-grid{grid-template-columns:1fr}.footer-brand{grid-column:auto}.footer-bottom{flex-direction:column;gap:8px}.hero p{font-size:16px}}
-  </style>
+  
+/* Bioinvasion shared branding and footer */
+.header-logo{display:block;width:190px;max-height:58px;object-fit:contain;object-position:left center}
+.footer-grid{display:grid;grid-template-columns:1.35fr 1fr 1fr 1fr;gap:30px;padding-bottom:32px}
+.footer-logos{display:flex;align-items:center;gap:18px;flex-wrap:wrap;margin-bottom:18px}
+.footer-logo{display:block;object-fit:contain;max-width:100%}
+.bio-logo{width:170px;max-height:58px}
+.tbarc-logo{width:105px;max-height:58px}
+.footer-brand p{max-width:350px;color:#aebfb1;font-size:13px}
+.footer-title{color:white;font:700 14px "Manrope";margin-bottom:13px}
+.footer-links{display:grid;gap:9px}
+.footer-links a{color:#b9c9bb;font-size:13px}
+.footer-links a:hover,.social-links a:hover{color:#fff}
+.social-links{display:flex;align-items:center;gap:12px}
+.social-links a{width:37px;height:37px;border:1px solid rgba(255,255,255,.22);border-radius:50%;display:grid;place-items:center;color:#d7e2d8}
+.social-links svg{width:18px;height:18px;display:block;fill:currentColor;flex:none}
+.footer-bottom{border-top:1px solid rgba(255,255,255,.14);padding-top:17px;display:flex;justify-content:center;text-align:center;color:#91a698;font-size:11px}
+.tbarc-mark{gap:14px}
+.about-tbarc-logo{display:block;width:min(250px,100%);max-height:150px;object-fit:contain}
+@media(max-width:900px){.footer-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:520px){.footer-grid{grid-template-columns:1fr}.footer-bottom{flex-direction:row}.header-logo{width:158px;max-height:52px}}
+
+</style>
 </head>
 <body>
   <div class="topline"><div class="container"><span>A knowledge and awareness platform on biological invasions</span><span class="right"><strong>A TBARC Initiative</strong> · Kerala, India</span></div></div>
   <header><div class="container nav-wrap">
-    <a class="brand" href="/"><span class="brand-mark"><i data-lucide="sprout"></i></span><span><span class="brand-name">BIOINVASION</span><span class="brand-sub">A TBARC initiative</span></span></a>
+    <a class="brand" href="/" aria-label="Bioinvasion home"><img src="/images/logo.png" alt="Bioinvasion" class="header-logo"></a>
     <button class="menu-toggle" id="menuToggle" aria-label="Open navigation" aria-expanded="false"><i data-lucide="menu"></i></button>
     <nav id="mainNav" aria-label="Main navigation">
-      <a href="/">Home</a><a class="active" href="/story/">The Story</a><a href="/invasive-watch-kerala/">Invasive Watch Kerala</a><a href="/blog/">News &amp; Blog</a><a class="nav-cta" href="/about/">About Bioinvasion ↗</a>
-    </nav>
+<a href="/">Home</a>
+<a href="/story/" class="active">The Story</a>
+<a href="/invasive-species/" >Invasive Species</a>
+<a href="/invasive-watch-kerala/" >Invasive Watch Kerala</a>
+<a href="/blog/" >News &amp; Blog</a>
+<a class="nav-cta " href="/about/">About Us <i data-lucide="arrow-up-right" style="width:14px;height:14px;vertical-align:middle"></i></a>
+</nav>
   </div></header>
 
   <main>
@@ -47,7 +86,6 @@
       <span class="eyebrow">The science behind the spread</span>
       <h1>The story of biological invasion.</h1>
       <p>From arrival to establishment, spread and impact — explore how species move into new environments, reshape ecosystems and become a global conservation challenge.</p>
-      <div class="crumb">HOME &nbsp; / &nbsp; THE STORY OF BIOLOGICAL INVASION</div>
     </div></div></section>
 
     <section class="section"><div class="container definition">
@@ -128,17 +166,59 @@
       </ul></div>
     </div></section>
 
-    <section class="cta"><div class="container"><span class="eyebrow">Observe · Document · Understand</span><h2>Be part of understanding biological invasions.</h2><p>Explore the Invasive Watch Kerala initiative and contribute to documenting invasive alien species across the state.</p><a class="btn" href="/invasive-watch-kerala/">Explore Invasive Watch Kerala <i data-lucide="arrow-right"></i></a></div></section>
+    <section class="cta"><div class="container"><span class="eyebrow">Observe · Document · Understand</span><h2>Be part of understanding biological invasions.</h2><p>Explore the Invasive Watch Kerala initiative and contribute to documenting invasive alien species across the state.</p><a class="btn" href="/invasive-watch-kerala/">Explore Invasive Watch Kerala <i data-lucide="arrow-right"></i></a>
+<a class="btn" href="https://forms.gle/5eXxyhSjT2y8kTPv5" target="_blank" rel="noopener">Contribute to the Blog <i data-lucide="arrow-up-right"></i></a></div></section>
   </main>
 
-  <footer><div class="container">
-    <div class="footer-grid">
-      <div class="footer-brand"><a class="brand" href="/"><span class="brand-mark" style="background:#477b58"><i data-lucide="sprout"></i></span><span><span class="brand-name" style="color:white">BIOINVASION</span><span class="brand-sub" style="color:#aebfb1">A TBARC initiative</span></span></a><p>A knowledge and awareness platform sharing the science, impacts and stories of biological invasions.</p></div>
-      <div><div class="footer-title">Explore</div><div class="footer-links"><a href="/">Home</a><a href="/story/">The Story of Biological Invasion</a><a href="/invasive-watch-kerala/">Invasive Watch Kerala</a></div></div>
-      <div><div class="footer-title">Discover more</div><div class="footer-links"><a href="/blog/">News &amp; Blog</a><a href="/about/">About Bioinvasion</a><a href="https://tbarc.in/" target="_blank" rel="noopener">TBARC website ↗</a></div></div>
+  <footer class="site-footer">
+<div class="container">
+  <div class="footer-grid">
+    <div class="footer-brand">
+      <div class="footer-logos">
+        <a href="/" aria-label="Bioinvasion home"><img src="/images/logo.png" alt="Bioinvasion logo" class="footer-logo bio-logo"></a>
+        <a href="https://tbarc.in/" aria-label="TBARC website"><img src="/images/tbarclogo.png" alt="TBARC logo" class="footer-logo tbarc-logo"></a>
+      </div>
+      <p>A knowledge and awareness platform sharing the science, impacts and stories of biological invasions.</p>
     </div>
-    <div class="footer-bottom"><span>© 2026 Bioinvasion · A TBARC Initiative</span><span>Science · Awareness · Biodiversity</span></div>
-  </div></footer>
+    <div>
+      <div class="footer-title">Bioinvasion</div>
+      <div class="footer-links">
+        <a href="/">Home</a>
+        <a href="/story/">The Story</a>
+        <a href="/blog/">News &amp; Blog</a>
+        <a href="/about/">About Us</a>
+      </div>
+    </div>
+    <div>
+      <div class="footer-title">TBARC</div>
+      <div class="footer-links">
+        <a href="https://tbarc.in/">Home</a>
+        <a href="https://events.tbarc.in/">Events</a>
+        <a href="https://tbarc.in/blog">Blog</a>
+        <a href="https://tbarc.in/gallery">Gallery</a>
+      </div>
+    </div>
+    <div>
+      <div class="footer-title">Follow TBARC</div>
+      <div class="social-links">
+        <a href="https://instagram.com/tbarcindia" aria-label="Instagram" title="Instagram" target="_blank" rel="noopener noreferrer">
+          <svg viewBox="0 0 24 24" role="img" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5" fill="none" stroke="currentColor" stroke-width="2"/><circle cx="12" cy="12" r="4" fill="none" stroke="currentColor" stroke-width="2"/><circle cx="17.5" cy="6.5" r="1.25" fill="currentColor"/></svg>
+        </a>
+        <a href="https://facebook.com/tbarcindia" aria-label="Facebook" title="Facebook" target="_blank" rel="noopener noreferrer">
+          <svg viewBox="0 0 24 24" role="img" aria-hidden="true"><path fill="currentColor" d="M13.5 21v-8h2.7l.4-3.1h-3.1v-2c0-.9.3-1.5 1.6-1.5h1.7V3.6c-.3 0-1.3-.1-2.4-.1-2.5 0-4.2 1.5-4.2 4.3v2.1H7.5V13h2.7v8h3.3z"/></svg>
+        </a>
+        <a href="https://linkedin.com/in/tbarcindia" aria-label="LinkedIn" title="LinkedIn" target="_blank" rel="noopener noreferrer">
+          <svg viewBox="0 0 24 24" role="img" aria-hidden="true"><path fill="currentColor" d="M20.45 2H3.55C2.69 2 2 2.68 2 3.52v16.96c0 .84.69 1.52 1.55 1.52h16.9c.86 0 1.55-.68 1.55-1.52V3.52c0-.84-.69-1.52-1.55-1.52ZM7.93 18.7H4.96V9.15h2.97v9.55ZM6.45 7.85a1.72 1.72 0 1 1 0-3.44 1.72 1.72 0 0 1 0 3.44Zm12.27 10.85h-2.96v-4.65c0-1.11-.02-2.54-1.55-2.54-1.55 0-1.79 1.21-1.79 2.46v4.73H9.46V9.15h2.84v1.3h.04c.4-.75 1.36-1.54 2.8-1.54 3 0 3.58 1.98 3.58 4.56v5.23Z"/></svg>
+        </a>
+        <a href="https://youtube.com/@tbarcindia" aria-label="YouTube" title="YouTube" target="_blank" rel="noopener noreferrer">
+          <svg viewBox="0 0 24 24" role="img" aria-hidden="true"><path fill="currentColor" d="M23.5 6.2a3 3 0 0 0-2.1-2.1C19.5 3.6 12 3.6 12 3.6s-7.5 0-9.4.5A3 3 0 0 0 .5 6.2 31 31 0 0 0 0 12a31 31 0 0 0 .5 5.8 3 3 0 0 0 2.1 2.1c1.9.5 9.4.5 9.4.5s7.5 0 9.4-.5a3 3 0 0 0 2.1-2.1A31 31 0 0 0 24 12a31 31 0 0 0-.5-5.8ZM9.6 15.6V8.4l6.3 3.6-6.3 3.6Z"/></svg>
+        </a>
+      </div>
+    </div>
+  </div>
+  <div class="footer-bottom"><span>© 2026 Bioinvasion · A TBARC Initiative</span></div>
+</div>
+</footer>
   <script>
     lucide.createIcons();
     const toggle=document.getElementById("menuToggle"),nav=document.getElementById("mainNav");
